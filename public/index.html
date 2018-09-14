@@ -23,9 +23,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hughes Fieldhouse</title>
   <link rel="stylesheet" type="text/css" href="styles/inline.css">
-
+  <link href="../styles/hughesmaster.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- TODO add manifest here -->
   <link rel="manifest" href="/manifest.json">
+  
   <!-- Add to home screen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -33,28 +35,98 @@
   <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
   <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
   <meta name="msapplication-TileColor" content="#2F3BA2">
+ 
+
 </head>
 <body>
 
+  <!--
   <header class="header">
     <h1 class="header__title">Hughes Fieldhouse</h1>
     <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
     <button id="butAdd" class="headerButton" aria-label="Add"></button>
   </header>
+-->
 
-  <main class="main">
+
+  <div id="hwrapper">
+    <div id="header"><a href="#menu" id="mm-icon"></a> <h1 id="hlogo"><a href="https://www.nwmissouri.edu" title="Return to Northwest Missouri State University"><span>Northwest Missouri State University</span></a></h1> <nav id="menu"><ul>
+    <li><a class="dropdown" href="index.htm">Home</a></li>
+    <li><a class="dropdown" href="about.htm">About</a>
+    <ul>
+    <li><a href="about.htm">About the Facility</a></li>
+    <li><a href="story.htm">The Story</a></li>
+    </ul>
+    </li>
+    <li><a class="dropdown" href="experience.htm">Experience</a></li>
+    <li><a class="dropdown" href="giving.htm">Giving</a>
+    <ul>
+    <li><a href="giving.htm">Ways to Give</a></li>
+    <li><a href="donate.htm">Online Giving</a></li>
+    <li><a href="requestInfo.htm">Request Information</a></li>
+    <li><a href="founding-50.htm">Founding 50</a></li>
+    </ul>
+    </li>
+    <li><a class="dropdown" href="gallery/index.htm">Media</a>
+    <ul>
+    <li><a href="gallery/construction/index.htm">Construction Gallery</a></li>
+    <li><a href="gallery/groundbreaking/index.htm">Groundbreaking Gallery</a></li>
+    <li><a href="gallery/renders/index.htm">Renders Gallery</a></li>
+    <li><a href="webcam.htm">Webcam</a></li>
+    <li><a href="media.htm">Media Center</a></li>
+    </ul>
+    </li>
+    </ul></nav></div>
+  </div>
     
 
 
+
+  <main class="main">
+    
+    <div class="grid-container" float="center">
+      <div class="grid-item" >
+        <a href="page.html" target="_self" title="page">
+        <img alt="page" height="136px" src="../images/page.jpg" width="287px"/>
+        <h3>page</h3>
+        </a>
+      </div>
+      <div class="grid-item" >
+        <a href="page.html" target="_self" title="page">
+        <img alt="page" height="136px" src="../images/page.jpg" width="287px"/>
+        <h3>page</h3>
+        </a>
+      </div>
+      <div class="grid-item" >
+        <a href="page.html" target="_self" title="page">
+        <img alt="page" height="136px" src="../images/page.jpg" width="287px"/>
+        <h3>page</h3>
+        </a>
+      </div>
+      <div class="grid-item" >
+        <a href="page.html" target="_self" title="page">
+        <img alt="page" height="136px" src="../images/page.jpg" width="287px"/>
+        <h3>page</h3>
+        </a>
+      </div>
+      <div class="grid-item" >
+        <a href="page.html" target="_self" title="page">
+        <img alt="page" height="136px" src="../images/page.jpg" width="287px"/>
+        <h3>page</h3>
+        </a>
+      </div>
+      <div class="grid-item" >
+        <a href="page.html" target="_self" title="page">
+        <img alt="page" height="136px" src="../images/page.jpg" width="287px"/>
+        <h3>page</h3>
+        </a>
+      </div>
+
+    </div>
   </main>
 
  
-  <div class="loader">
-    <svg viewBox="0 0 32 32" width="32" height="32">
-      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
-    </svg>
-  </div>
-
+  
   <!-- Uncomment the line below when ready to test with fake data -->
   <script src="scripts/app.js" async></script>
 
